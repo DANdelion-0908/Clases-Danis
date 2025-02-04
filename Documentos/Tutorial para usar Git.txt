@@ -1,0 +1,8 @@
+Comandos de Git
+
+Ver si hay cambios nuevos - git fetch
+Descargar cambios nuevos de la nube - git pull
+
+Subir cambios
+1. git add .
+2. git push

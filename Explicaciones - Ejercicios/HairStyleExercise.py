@@ -41,14 +41,24 @@ print(total_revenue)
 
 # Average daily revenue 
 
-print("                      ")
-print("Average daily revenue:")
+print("\nAverage daily revenue:")
 average_daily_revenue = total_revenue / 7
 print(average_daily_revenue) 
 
 # Haircuts under 30$$$
 
-print("                      ")
-print("Hair cuts under $30 !!:")
+print("\nHair cuts under $30 !!:")
 cuts_under_30 = [hairstyles[i] for i in range(len(new_prices)) if new_prices[i] < 30]
+"""
+Estamos utilizando List Comprehension para crear una lista que itera por cada uno de los elementos de hairstyles y almacena los que tiene un new_prices < 30
+"""
+
+cuts_under_30_long = [] # Estas cuatro líneas equivalen a la lista cuts_under_30 creada mediante List Comprehension
+
+for i in range(len(hairstyles)):
+  if new_prices[i] < 30:
+    cuts_under_30_long.append(hairstyles[i])
+
 print(cuts_under_30)
+
+print(cuts_under_30_long)
