@@ -1,4 +1,6 @@
-# 8 BALL EXERCISE
+"""
+Nombre: Daniel Ortiz
+"""
 
 import random
 
